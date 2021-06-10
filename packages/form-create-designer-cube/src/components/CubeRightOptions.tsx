@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-06-08 16:58:09
- * @LastEditTime: 2021-06-09 15:20:23
+ * @LastEditTime: 2021-06-10 12:49:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /form-create-designer-cube/src/components/CubeOptions.tsx
@@ -56,19 +56,24 @@ export default defineComponent<IDKCubeOptionsProps>({
       cubeHeight: 400,
     });
 
+    /// error2: vModel 不能用?直接报错...
+    /// error3: vOn:change 只能触发一次?
     return () => (
       <div class={classes["dk-cube-right-container-area"]}>
+        {/* <el-input-number vModel={props.cubeOptions.cubeDensity} />
+        <el-input-number vModel={props.cubeOptions.cubeWidth} />
+        <el-input-number vModel={props.cubeOptions.cubeHeight} /> */}
         <el-input-number
           value={props.cubeOptions.cubeDensity}
-          on-change={useEmitInput}
+          vOn:change={useEmitInput}
         />
         <el-input-number
           value={props.cubeOptions.cubeWidth}
-          on-change={useEmitInput}
+          vOn:change={useEmitInput}
         />
         <el-input-number
           value={props.cubeOptions.cubeHeight}
-          on-change={useEmitInput}
+          vOn:change={useEmitInput}
         />
       </div>
     );

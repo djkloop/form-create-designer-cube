@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-02 23:43:09
- * @LastEditTime: 2021-06-10 11:41:54
+ * @LastEditTime: 2021-06-10 12:22:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /form-create-designer-plugins/packages/form-create-designer-cube/vite.config.js

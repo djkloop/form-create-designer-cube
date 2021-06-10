@@ -1,12 +1,12 @@
 /*
  * @Author: your name
  * @Date: 2021-05-02 23:43:09
- * @LastEditTime: 2021-06-09 15:08:15
+ * @LastEditTime: 2021-06-10 12:47:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /form-create-designer-plugins/packages/form-create-designer-cube/src/DkCube.tsx
  */
-import { defineComponent, onMounted, reactive } from "vue-demi";
+import { defineComponent, onMounted, reactive, ref } from "vue-demi";
 import classes from "./dkcube.module.scss";
 
 let i = 1;
@@ -39,9 +39,14 @@ export default defineComponent({
       cubeWidth: 400,
     });
 
+    /// ??? ref
+    const _designer_refs_ = ref(null);
+
     onMounted(() => {
-      /// ref bug
+      /// tsx下 ref有bug?
       /// 只能从ctx上取到
+      /// error1: ref找不到
+      console.log(_designer_refs_.value, " <---");
       const designerRefs = refs.designer as any;
       /// 自定义左侧组件
       designerRefs.addComponent({
