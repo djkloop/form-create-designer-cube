@@ -1,0 +1,52 @@
+{
+  "name": "@form-create-designer-components/dk-cube",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/dk-cube.umd.js",
+  "module": "./dist/dk-cube.es.js",
+  "scripts": {
+    "postinstall": "husky install",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint './src/**/*.{js,ts,tsx,vue,md}'",
+    "lint:fix": "eslint './src/**/*.{js,ts,tsx,vue,md}' --fix"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.10",
+    "vue": "^2.6.13 || ^3.0.11"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@form-create/designer": "^1.0.2",
+    "@form-create/element-ui": "^2.5.7",
+    "core-js": "^3.13.1",
+    "element-ui": "^2.15.2",
+    "vue-demi": "^0.9.1",
+    "vue-types": "^4.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "@vue/composition-api": "^1.0.0-rc.10",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "@vue/runtime-dom": "^3.0.11",
+    "esbuild-plugin-vite-element-ui": "^1.0.2",
+    "eslint": "^7.27.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.10.0",
+    "husky": "^6.0.0",
+    "prettier": "^2.3.0",
+    "sass": "^1.34.1",
+    "typescript": "^4.3.2",
+    "typescript-plugin-css-modules": "^3.4.0",
+    "vite": "^2.3.5",
+    "vite-plugin-vue2": "^1.6.2",
+    "vue": "^2.6.13"
+  }
+}
